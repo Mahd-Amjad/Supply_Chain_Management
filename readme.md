@@ -75,27 +75,6 @@ Before setting up the SC_Project Database Management System, ensure you have the
     -   Open `PHP_Files/config.php`.
     -   Update the database connection parameters with your SQL Server credentials.
 
-    php
-
-    Copy code
-
-    `<?php
-    // PHP_Files/config.php
-
-    $serverName = "YOUR_SERVER_NAME";
-    $connectionOptions = array(
-        "Database" => "SC_Project",
-        "Uid" => "YOUR_USERNAME",
-        "PWD" => "YOUR_PASSWORD"
-    );
-
-    // Establishes the connection
-    $conn = sqlsrv_connect($serverName, $connectionOptions);
-    if ($conn === false) {
-        die(print_r(sqlsrv_errors(), true));
-    }
-    ?>`
-
 4.  **Set Up Logging:**
 
     -   Ensure the `logs` directory exists in the project root.
