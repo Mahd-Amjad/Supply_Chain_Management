@@ -8,13 +8,6 @@
 - [Installation](#installation)
   - [Prerequisites](#prerequisites)
   - [Setup Steps](#setup-steps)
-- [Database Schema](#database-schema)
-- [Usage](#usage)
-  - [Accessing the Application](#accessing-the-application)
-  - [Navigating the Dashboard](#navigating-the-dashboard)
-  - [CRUD Operations](#crud-operations)
-  - [Running Complex Queries](#running-complex-queries)
-
 - [License](#license)
 
 ## Overview
