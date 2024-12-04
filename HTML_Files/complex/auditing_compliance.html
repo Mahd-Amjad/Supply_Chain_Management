@@ -1,0 +1,32 @@
+<!-- HTML_Files/complex/auditing_compliance.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Auditing and Compliance</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <h2>Auditing and Compliance</h2>
+    <ul>
+        <li><a href="auditing_compliance.html#high_value_orders">Retrieve High-Value Orders</a></li>
+        <li><a href="auditing_compliance.html#duplicate_payments">Identify Duplicate Payments</a></li>
+    </ul>
+    
+    <h3 id="high_value_orders">Retrieve High-Value Orders Above $800</h3>
+    <form action="../../PHP_Files/complex/auditing_compliance.php" method="post">
+        <input type="hidden" name="query_type" value="high_value_orders">
+        <button type="submit">Run High-Value Orders Query</button>
+    </form>
+    <div id="high_value_orders_result"></div>
+    
+    <h3 id="duplicate_payments">Identify Duplicate Payments</h3>
+    <form action="../../PHP_Files/complex/auditing_compliance.php" method="post">
+        <input type="hidden" name="query_type" value="duplicate_payments">
+        <button type="submit">Find Duplicate Payments</button>
+    </form>
+    <div id="duplicate_payments_result"></div>
+    
+    <br>
+    <a href="../complex.html">Back to Complex Queries</a>
+</body>
+</html>

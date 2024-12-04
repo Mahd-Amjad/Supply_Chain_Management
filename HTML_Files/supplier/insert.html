@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insert Supplier</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <h2>Insert Supplier</h2>
+    <form action="../../PHP_Files/supplier/insert.php" method="post">
+        <label for="supplier_id">Supplier ID:</label><br>
+        <input type="number" id="supplier_id" name="supplier_id" required><br><br>
+
+        <label for="supplier_name">Supplier Name:</label><br>
+        <input type="text" id="supplier_name" name="supplier_name" required><br><br>
+
+        <label for="contact_info">Contact Info:</label><br>
+        <input type="text" id="contact_info" name="contact_info"><br><br>
+
+        <label for="country">Country:</label><br>
+        <input type="text" id="country" name="country" required><br><br>
+
+        <label for="rating">Rating:</label><br>
+        <input type="number" id="rating" name="rating" step="0.1" min="0" max="5" required><br><br>
+
+        <input type="submit" value="Insert Supplier">
+    </form>
+    <br>
+    <a href="../index.html">Back to Dashboard</a>
+</body>
+</html>

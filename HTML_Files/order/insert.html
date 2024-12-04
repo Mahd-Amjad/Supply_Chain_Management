@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insert Order</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <!-- Include jQuery for AJAX calls -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h2>Insert New Order</h2>
+    <form id="insertOrderForm" action="../../PHP_Files/order/insert.php" method="post">
+        <label for="order_id">Order ID:</label><br>
+        <input type="number" id="order_id" name="order_id" required><br><br>
+
+        <label for="order_date">Order Date:</label><br>
+        <input type="date" id="order_date" name="order_date" required><br><br>
+
+        <label for="quantity">Quantity:</label><br>
+        <input type="number" id="quantity" name="quantity" min="1" required><br><br>
+
+        <label for="supplier_id">Supplier:</label><br>
+        <select id="supplier_id" name="supplier_id" required>
+            <option value="">Loading suppliers...</option>
+        </select><br><br>
+
+        <label for="customer_id">Customer:</label><br>
+        <select id="customer_id" name="customer_id" required>
+            <option value="">Loading customers...</option>
+        </select><br><br>
+
+        <label for="status">Status:</label><br>
+        <input type="text" id="status" name="status" required><br><br>
+
+        <label for="product_id">Product:</label><br>
+        <select id="product_id" name="product_id" required>
+            <option value="">Loading products...</option>
+        </select><br><br>
+
+        <label for="total_amount">Total Amount:</label><br>
+        <input type="number" step="0.01" min="0" id="total_amount" name="total_amount" required><br><br>
+
+        <input type="submit" value="Insert Order">
+    </form>
+    <br>
+    <a href="../index.html">Back to Dashboard</a>
+
+    <script>
+        $(document).ready(function(){
+            // Fetch suppliers via AJAX
+            $.ajax({
+                url: '../../PHP_Files/get_suppliers.php',
+                method: 'GET',
+                dataType: 'json',
+                success: function(data){
+                    var supplierSelect = $('#supplier_id');
+                    supplierSelect.empty();
+                    supplierSelect.append('<option value="">Select Supplier</option>');
+                    $.each(data, function(index, supplier){
+                        supplierSelect.append('<option value="' + supplier.supplier_id + '">' + supplier.supplier_name + '</option>');
+                    });
+                },
+                error: function(){
+                    alert('Failed to load suppliers.');
+                }
+            });
+
+            // Fetch customers via AJAX
+            $.ajax({
+                url: '../../PHP_Files/get_customers.php',
+                method: 'GET',
+                dataType: 'json',
+                success: function(data){
+                    var customerSelect = $('#customer_id');
+                    customerSelect.empty();
+                    customerSelect.append('<option value="">Select Customer</option>');
+                    $.each(data, function(index, customer){
+                        customerSelect.append('<option value="' + customer.customer_id + '">' + customer.customer_name + '</option>');
+                    });
+                },
+                error: function(){
+                    alert('Failed to load customers.');
+                }
+            });
+
+            // Fetch products via AJAX
+            $.ajax({
+                url: '../../PHP_Files/get_products.php',
+                method: 'GET',
+                dataType: 'json',
+                success: function(data){
+                    var productSelect = $('#product_id');
+                    productSelect.empty();
+                    productSelect.append('<option value="">Select Product</option>');
+                    $.each(data, function(index, product){
+                        productSelect.append('<option value="' + product.product_id + '">' + product.product_name + '</option>');
+                    });
+                },
+                error: function(){
+                    alert('Failed to load products.');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

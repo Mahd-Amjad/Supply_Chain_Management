@@ -1,0 +1,42 @@
+<!-- HTML_Files/complex/inventory_management.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventory Management</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <h2>Inventory Management</h2>
+    <ul>
+        <li><a href="inventory_management.html#low_stock">View Low Stock Items</a></li>
+        <li><a href="inventory_management.html#update_inventory">Update Inventory After Order</a></li>
+        <li><a href="inventory_management.html#suggest_reorder">Suggest Products for Reordering</a></li>
+    </ul>
+    
+    <h3 id="low_stock">Low Stock Items Below Threshold</h3>
+    <form action="../../PHP_Files/complex/inventory_management.php" method="post">
+        <input type="hidden" name="query_type" value="low_stock">
+        <button type="submit">Run Low Stock Query</button>
+    </form>
+    <div id="low_stock_result"></div>
+    
+    <h3 id="update_inventory">Update Inventory After Order</h3>
+    <form action="../../PHP_Files/complex/inventory_management.php" method="post">
+        <label for="order_id">Order ID:</label>
+        <input type="number" name="order_id" id="order_id" required>
+        <input type="hidden" name="query_type" value="update_inventory">
+        <button type="submit">Update Inventory</button>
+    </form>
+    <div id="update_inventory_result"></div>
+    
+    <h3 id="suggest_reorder">Suggest Products for Reordering</h3>
+    <form action="../../PHP_Files/complex/inventory_management.php" method="post">
+        <input type="hidden" name="query_type" value="suggest_reorder">
+        <button type="submit">Run Reorder Suggestion</button>
+    </form>
+    <div id="suggest_reorder_result"></div>
+    
+    <br>
+    <a href="../complex.html">Back to Complex Queries</a>
+</body>
+</html>

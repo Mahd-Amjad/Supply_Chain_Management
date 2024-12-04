@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insert Retailer</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <h2>Insert New Retailer</h2>
+    <form action="../../PHP_Files/retailer/insert.php" method="post">
+        <label for="retailer_id">Retailer ID:</label><br>
+        <input type="number" id="retailer_id" name="retailer_id" required><br><br>
+
+        <label for="retailer_name">Retailer Name:</label><br>
+        <input type="text" id="retailer_name" name="retailer_name" required><br><br>
+
+        <label for="retailer_location">Retailer Location:</label><br>
+        <input type="text" id="retailer_location" name="retailer_location"><br><br>
+
+        <label for="warehouse_capacity">Warehouse Capacity:</label><br>
+        <input type="number" id="warehouse_capacity" name="warehouse_capacity" min="0" required><br><br>
+
+        <input type="submit" value="Insert Retailer">
+    </form>
+    <br>
+    <a href="../index.html">Back to Dashboard</a>
+</body>
+</html>

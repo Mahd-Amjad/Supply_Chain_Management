@@ -1,0 +1,40 @@
+<!-- HTML_Files/complex/shipment_logistics.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shipment and Logistics Tracking</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <h2>Shipment and Logistics Tracking</h2>
+    <ul>
+        <li><a href="shipment_logistics.html#non_delivered_shipments">Retrieve Shipment Status for Non-Delivered Orders</a></li>
+        <li><a href="shipment_logistics.html#avg_delivery_time">Calculate Average Delivery Time per Warehouse</a></li>
+        <li><a href="shipment_logistics.html#estimate_shipping_cost">Estimate Shipping Cost Based on Product Weight</a></li>
+    </ul>
+    
+    <h3 id="non_delivered_shipments">Retrieve Shipment Status for All Non-Delivered Orders</h3>
+    <form action="../../PHP_Files/complex/shipment_logistics.php" method="post">
+        <input type="hidden" name="query_type" value="non_delivered_shipments">
+        <button type="submit">Retrieve Non-Delivered Shipments</button>
+    </form>
+    <div id="non_delivered_shipments_result"></div>
+    
+    <h3 id="avg_delivery_time">Calculate Average Delivery Time per Warehouse Location</h3>
+    <form action="../../PHP_Files/complex/shipment_logistics.php" method="post">
+        <input type="hidden" name="query_type" value="avg_delivery_time">
+        <button type="submit">Calculate Average Delivery Time</button>
+    </form>
+    <div id="avg_delivery_time_result"></div>
+    
+    <h3 id="estimate_shipping_cost">Estimate Shipping Cost Based on Product Weight</h3>
+    <form action="../../PHP_Files/complex/shipment_logistics.php" method="post">
+        <input type="hidden" name="query_type" value="estimate_shipping_cost">
+        <button type="submit">Estimate Shipping Costs</button>
+    </form>
+    <div id="estimate_shipping_cost_result"></div>
+    
+    <br>
+    <a href="../complex.html">Back to Complex Queries</a>
+</body>
+</html>

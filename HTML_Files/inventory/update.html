@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Inventory</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <h2>Update Inventory Record</h2>
+    <form action="../../PHP_Files/inventory/update.php" method="post">
+        <label for="inventory_id">Inventory ID to Update:</label><br>
+        <input type="number" id="inventory_id" name="inventory_id" required><br><br>
+
+        <label for="item_type">New Item Type:</label><br>
+        <input type="text" id="item_type" name="item_type"><br><br>
+
+        <label for="quantity">New Quantity:</label><br>
+        <input type="number" id="quantity" name="quantity" min="0"><br><br>
+
+        <label for="warehouse_id">New Warehouse ID:</label><br>
+        <input type="number" id="warehouse_id" name="warehouse_id"><br><br>
+
+        <label for="product_id">New Product ID:</label><br>
+        <input type="number" id="product_id" name="product_id"><br><br>
+
+        <input type="submit" value="Update Inventory">
+    </form>
+    <br>
+    <a href="../index.html">Back to Dashboard</a>
+</body>
+</html>

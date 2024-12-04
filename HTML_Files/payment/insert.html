@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insert Payment</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <h2>Insert New Payment</h2>
+    <form action="../../PHP_Files/payment/insert.php" method="post">
+        <label for="payment_id">Payment ID:</label><br>
+        <input type="number" id="payment_id" name="payment_id" required><br><br>
+
+        <label for="order_id">Order ID:</label><br>
+        <input type="number" id="order_id" name="order_id" required><br><br>
+
+        <label for="payment_date">Payment Date:</label><br>
+        <input type="date" id="payment_date" name="payment_date"><br><br>
+
+        <label for="payment_amount">Payment Amount:</label><br>
+        <input type="number" step="0.01" id="payment_amount" name="payment_amount" min="0" required><br><br>
+
+        <label for="payment_method">Payment Method:</label><br>
+        <input type="text" id="payment_method" name="payment_method"><br><br>
+
+        <label for="status">Status:</label><br>
+        <input type="text" id="status" name="status"><br><br>
+
+        <input type="submit" value="Insert Payment">
+    </form>
+    <br>
+    <a href="../index.html">Back to Dashboard</a>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insert Warehouse</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <h2>Insert New Warehouse</h2>
+    <form action="../../PHP_Files/warehouse/insert.php" method="post">
+        <label for="warehouse_id">Warehouse ID:</label><br>
+        <input type="number" id="warehouse_id" name="warehouse_id" required><br><br>
+
+        <label for="warehouse_location">Warehouse Location:</label><br>
+        <input type="text" id="warehouse_location" name="warehouse_location" required><br><br>
+
+        <label for="capacity">Capacity (cubic meters):</label><br>
+        <input type="number" id="capacity" name="capacity" min="1" required><br><br>
+
+        <input type="submit" value="Insert Warehouse">
+    </form>
+    <br>
+    <a href="../index.html">Back to Dashboard</a>
+</body>
+</html>

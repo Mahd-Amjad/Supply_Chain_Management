@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insert Shipping Marks</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <h2>Insert Shipping Marks</h2>
+    <form action="../../PHP_Files/shippingmarks/insert.php" method="post">
+        <label for="shipping_id">Shipping ID:</label><br>
+        <input type="number" id="shipping_id" name="shipping_id" required><br><br>
+
+        <label for="shipment_id">Shipment ID:</label><br>
+        <input type="number" id="shipment_id" name="shipment_id" required><br><br>
+
+        <label for="shipping_marks">Shipping Marks:</label><br>
+        <textarea id="shipping_marks" name="shipping_marks" rows="4" required></textarea><br><br>
+
+        <input type="submit" value="Insert Shipping Marks">
+    </form>
+    <br>
+    <a href="../index.html">Back to Dashboard</a>
+</body>
+</html>

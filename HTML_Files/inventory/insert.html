@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insert Inventory</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <h2>Insert New Inventory Record</h2>
+    <form action="../../PHP_Files/inventory/insert.php" method="post">
+        <label for="inventory_id">Inventory ID:</label><br>
+        <input type="number" id="inventory_id" name="inventory_id" required><br><br>
+
+        <label for="item_type">Item Type:</label><br>
+        <input type="text" id="item_type" name="item_type"><br><br>
+
+        <label for="quantity">Quantity:</label><br>
+        <input type="number" id="quantity" name="quantity" min="0" required><br><br>
+
+        <label for="warehouse_id">Warehouse ID:</label><br>
+        <input type="number" id="warehouse_id" name="warehouse_id" required><br><br>
+
+        <label for="product_id">Product ID:</label><br>
+        <input type="number" id="product_id" name="product_id" required><br><br>
+
+        <input type="submit" value="Insert Inventory">
+    </form>
+    <br>
+    <a href="../index.html">Back to Dashboard</a>
+</body>
+</html>

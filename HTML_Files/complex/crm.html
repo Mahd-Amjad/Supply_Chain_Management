@@ -1,0 +1,34 @@
+<!-- HTML_Files/complex/crm.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Relationship Management (CRM)</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <h2>Customer Relationship Management (CRM)</h2>
+    <ul>
+        <li><a href="crm.html#top_customers">Top Customers by Total Spending</a></li>
+        <li><a href="crm.html#customer_orders">Retrieve All Orders for a Specific Customer</a></li>
+    </ul>
+    
+    <h3 id="top_customers">Top Customers by Total Spending in 2024</h3>
+    <form action="../../PHP_Files/complex/crm.php" method="post">
+        <input type="hidden" name="query_type" value="top_customers">
+        <button type="submit">Run Top Customers Query</button>
+    </form>
+    <div id="top_customers_result"></div>
+    
+    <h3 id="customer_orders">Retrieve All Orders for a Specific Customer</h3>
+    <form action="../../PHP_Files/complex/crm.php" method="post">
+        <label for="customer_id">Customer ID:</label>
+        <input type="number" name="customer_id" id="customer_id" required>
+        <input type="hidden" name="query_type" value="customer_orders">
+        <button type="submit">Retrieve Orders</button>
+    </form>
+    <div id="customer_orders_result"></div>
+    
+    <br>
+    <a href="../complex.html">Back to Complex Queries</a>
+</body>
+</html>

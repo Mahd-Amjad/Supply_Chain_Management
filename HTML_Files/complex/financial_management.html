@@ -1,0 +1,46 @@
+<!-- HTML_Files/complex/financial_management.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Financial Management</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <h2>Financial Management</h2>
+    <ul>
+        <li><a href="financial_management.html#monthly_sales">Monthly Sales Report</a></li>
+        <li><a href="financial_management.html#outstanding_payments">Outstanding Payments</a></li>
+        <li><a href="financial_management.html#total_payments">Total Payments to Suppliers</a></li>
+    </ul>
+    
+    <h3 id="monthly_sales">Monthly Sales Report</h3>
+    <form action="../../PHP_Files/complex/financial_management.php" method="post">
+        <label for="month">Month (1-12):</label>
+        <input type="number" name="month" id="month" min="1" max="12" required>
+        <label for="year">Year:</label>
+        <input type="number" name="year" id="year" min="2000" max="2100" required>
+        <input type="hidden" name="query_type" value="monthly_sales">
+        <button type="submit">Run Sales Report</button>
+    </form>
+    <div id="monthly_sales_result"></div>
+    
+    <h3 id="outstanding_payments">Outstanding Payments</h3>
+    <form action="../../PHP_Files/complex/financial_management.php" method="post">
+        <input type="hidden" name="query_type" value="outstanding_payments">
+        <button type="submit">View Outstanding Payments</button>
+    </form>
+    <div id="outstanding_payments_result"></div>
+    
+    <h3 id="total_payments">Total Payments to Suppliers</h3>
+    <form action="../../PHP_Files/complex/financial_management.php" method="post">
+        <label for="year_payments">Year:</label>
+        <input type="number" name="year_payments" id="year_payments" min="2000" max="2100" required>
+        <input type="hidden" name="query_type" value="total_payments">
+        <button type="submit">Run Total Payments Report</button>
+    </form>
+    <div id="total_payments_result"></div>
+    
+    <br>
+    <a href="../complex.html">Back to Complex Queries</a>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!-- HTML_Files/complex/order_shipment_management.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order and Shipment Management</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <h2>Order and Shipment Management</h2>
+    <ul>
+        <li><a href="order_shipment_management.html#order_shipment_status">Display Order and Shipment Status</a></li>
+        <li><a href="order_shipment_management.html#in_transit_shipments">Find In-Transit Shipments</a></li>
+        <li><a href="order_shipment_management.html#pending_shipments">Track Pending Shipments Over 7 Days</a></li>
+    </ul>
+    
+    <h3 id="order_shipment_status">Display Order and Shipment Status for Cross-Reference</h3>
+    <form action="../../PHP_Files/complex/order_shipment_management.php" method="post">
+        <input type="hidden" name="query_type" value="order_shipment_status">
+        <button type="submit">Display Statuses</button>
+    </form>
+    <div id="order_shipment_status_result"></div>
+    
+    <h3 id="in_transit_shipments">Find Shipments Still "In Transit"</h3>
+    <form action="../../PHP_Files/complex/order_shipment_management.php" method="post">
+        <input type="hidden" name="query_type" value="in_transit_shipments">
+        <button type="submit">Find In-Transit Shipments</button>
+    </form>
+    <div id="in_transit_shipments_result"></div>
+    
+    <h3 id="pending_shipments">Track Shipments Pending Over 7 Days</h3>
+    <form action="../../PHP_Files/complex/order_shipment_management.php" method="post">
+        <input type="hidden" name="query_type" value="pending_shipments">
+        <button type="submit">Track Pending Shipments</button>
+    </form>
+    <div id="pending_shipments_result"></div>
+    
+    <br>
+    <a href="../complex.html">Back to Complex Queries</a>
+</body>
+</html>

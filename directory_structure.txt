@@ -1,0 +1,248 @@
+Folder PATH listing for volume Windows
+Volume serial number is A640-B021
+C:.
+|   directory_structure.txt
+|   
++---assets
+|   +---cs
+|   \---js
++---HTML_Files
+|   |   complex.html
+|   |   index.html
+|   |   login.html
+|   |   
+|   +---complex
+|   |       auditing_compliance.html
+|   |       crm.html
+|   |       customer_supplier_insights.html
+|   |       data_integrity.html
+|   |       financial_management.html
+|   |       forecast_planning.html
+|   |       inventory_management.html
+|   |       order_shipment_management.html
+|   |       shipment_logistics.html
+|   |       supplier_management.html
+|   |       
+|   +---container
+|   |       delete.html
+|   |       insert.html
+|   |       update.html
+|   |       view.html
+|   |       
+|   +---containershipment
+|   |       delete.html
+|   |       insert.html
+|   |       update.html
+|   |       view.html
+|   |       
+|   +---customer
+|   |       delete.html
+|   |       insert.html
+|   |       update.html
+|   |       view.html
+|   |       
+|   +---customsclearance
+|   |       delete.html
+|   |       insert.html
+|   |       update.html
+|   |       view.html
+|   |       
+|   +---forecast
+|   |       delete.html
+|   |       insert.html
+|   |       update.html
+|   |       view.html
+|   |       
+|   +---forwarder
+|   |       delete.html
+|   |       insert.html
+|   |       update.html
+|   |       view.html
+|   |       
+|   +---inventory
+|   |       delete.html
+|   |       insert.html
+|   |       update.html
+|   |       view.html
+|   |       
+|   +---order
+|   |       delete.html
+|   |       insert.html
+|   |       update.html
+|   |       view.html
+|   |       
+|   +---payment
+|   |       delete.html
+|   |       insert.html
+|   |       update.html
+|   |       view.html
+|   |       
+|   +---product
+|   |       delete.html
+|   |       insert.html
+|   |       update.html
+|   |       view.html
+|   |       
+|   +---production
+|   |       delete.html
+|   |       insert.html
+|   |       update.html
+|   |       view.html
+|   |       
+|   +---proformainvoice
+|   |       delete.html
+|   |       insert.html
+|   |       update.html
+|   |       view.html
+|   |       
+|   +---retailer
+|   |       delete.html
+|   |       insert.html
+|   |       update.html
+|   |       view.html
+|   |       
+|   +---shipment
+|   |       delete.html
+|   |       insert.html
+|   |       update.html
+|   |       view.html
+|   |       
+|   +---shippingmarks
+|   |       delete.html
+|   |       insert.html
+|   |       update.html
+|   |       view.html
+|   |       
+|   +---supplier
+|   |       delete.html
+|   |       insert.html
+|   |       update.html
+|   |       view.html
+|   |       
+|   \---warehouse
+|           delete.html
+|           insert.html
+|           update.html
+|           view.html
+|           
+\---PHP_Files
+    |   complex_queries.php
+    |   config.php
+    |   create_table.php
+    |   login.php
+    |   logout.php
+    |   
+    +---complex
+    |       auditing_compliance.php
+    |       crm.php
+    |       customer_supplier_insights.php
+    |       data_integrity.php
+    |       financial_management.php
+    |       forecast_planning.php
+    |       inventory_management.php
+    |       order_shipment_management.php
+    |       shipment_logistics.php
+    |       supplier_management.php
+    |       
+    +---container
+    |       delete.php
+    |       insert.php
+    |       update.php
+    |       view.php
+    |       
+    +---containershipment
+    |       delete.php
+    |       insert.php
+    |       update.php
+    |       view.php
+    |       
+    +---customer
+    |       delete.php
+    |       insert.php
+    |       update.php
+    |       view.php
+    |       
+    +---customsclearance
+    |       delete.php
+    |       insert.php
+    |       update.php
+    |       view.php
+    |       
+    +---forecast
+    |       delete.php
+    |       insert.php
+    |       update.php
+    |       view.php
+    |       
+    +---forwarder
+    |       delete.php
+    |       insert.php
+    |       update.php
+    |       view.php
+    |       
+    +---inventory
+    |       delete.php
+    |       insert.php
+    |       update.php
+    |       view.php
+    |       
+    +---order
+    |       delete.php
+    |       insert.php
+    |       update.php
+    |       view.php
+    |       
+    +---payment
+    |       delete.php
+    |       insert.php
+    |       update.php
+    |       view.php
+    |       
+    +---product
+    |       delete.php
+    |       insert.php
+    |       update.php
+    |       view.php
+    |       
+    +---production
+    |       delete.php
+    |       insert.php
+    |       update.php
+    |       view.php
+    |       
+    +---proformainvoice
+    |       delete.php
+    |       insert.php
+    |       update.php
+    |       view.php
+    |       
+    +---retailer
+    |       delete.php
+    |       insert.php
+    |       update.php
+    |       view.php
+    |       
+    +---shipment
+    |       delete.php
+    |       insert.php
+    |       update.php
+    |       view.php
+    |       
+    +---shippingmarks
+    |       delete.php
+    |       insert.php
+    |       update.php
+    |       view.php
+    |       
+    +---supplier
+    |       delete.php
+    |       insert.php
+    |       update.php
+    |       view.php
+    |       
+    \---warehouse
+            delete.php
+            insert.php
+            update.php
+            view.php
+            

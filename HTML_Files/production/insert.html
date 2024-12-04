@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insert Production</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <h2>Insert Production</h2>
+    <form action="../../PHP_Files/production/insert.php" method="post">
+        <label for="production_id">Production ID:</label><br>
+        <input type="number" id="production_id" name="production_id" required><br><br>
+
+        <label for="item_type">Item Type:</label><br>
+        <input type="text" id="item_type" name="item_type" required><br><br>
+
+        <label for="start_date">Start Date:</label><br>
+        <input type="date" id="start_date" name="start_date" required><br><br>
+
+        <label for="status">Status:</label><br>
+        <input type="text" id="status" name="status" required><br><br>
+
+        <label for="order_id">Order ID:</label><br>
+        <input type="number" id="order_id" name="order_id" required><br><br>
+
+        <input type="submit" value="Insert Production">
+    </form>
+    <br>
+    <a href="../index.html">Back to Dashboard</a>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insert Customer Clearance</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <h2>Insert Customer Clearance</h2>
+    <form action="../../PHP_Files/customerclearance/insert.php" method="post">
+        <label for="clearance_id">Clearance ID:</label><br>
+        <input type="number" id="clearance_id" name="clearance_id" required><br><br>
+
+        <label for="shipment_id">Shipment ID:</label><br>
+        <input type="number" id="shipment_id" name="shipment_id" required><br><br>
+
+        <label for="custom_status">Customs Status:</label><br>
+        <input type="text" id="custom_status" name="custom_status" required><br><br>
+
+        <label for="clearance_date">Clearance Date:</label><br>
+        <input type="date" id="clearance_date" name="clearance_date" required><br><br>
+
+        <label for="documents">Documents:</label><br>
+        <textarea id="documents" name="documents" rows="4" required></textarea><br><br>
+
+        <input type="submit" value="Insert Customer Clearance">
+    </form>
+    <br>
+    <a href="../index.html">Back to Dashboard</a>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insert Container</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <h2>Insert New Container</h2>
+    <form action="../../PHP_Files/container/insert.php" method="post">
+        <label for="container_id">Container ID:</label><br>
+        <input type="number" id="container_id" name="container_id" required><br><br>
+
+        <label for="status">Status:</label><br>
+        <input type="text" id="status" name="status" required><br><br>
+
+        <label for="port_id">Port ID:</label><br>
+        <input type="number" id="port_id" name="port_id"><br><br>
+
+        <input type="submit" value="Insert Container">
+    </form>
+    <br>
+    <a href="../index.html">Back to Dashboard</a>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!-- HTML_Files/complex/forecast_planning.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forecasting and Demand Planning</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <h2>Forecasting and Demand Planning</h2>
+    <ul>
+        <li><a href="forecast_planning.html#forecasted_demand">Retrieve Forecasted Product Demand Data</a></li>
+        <li><a href="forecast_planning.html#compare_forecast_actual">Compare Forecast vs. Actual Sales</a></li>
+    </ul>
+    
+    <h3 id="forecasted_demand">Retrieve Forecasted Product Demand Data</h3>
+    <form action="../../PHP_Files/complex/forecast_planning.php" method="post">
+        <input type="hidden" name="query_type" value="forecasted_demand">
+        <button type="submit">Run Forecasted Demand Query</button>
+    </form>
+    <div id="forecasted_demand_result"></div>
+    
+    <h3 id="compare_forecast_actual">Compare Forecast vs. Actual Sales by Period</h3>
+    <form action="../../PHP_Files/complex/forecast_planning.php" method="post">
+        <input type="hidden" name="query_type" value="compare_forecast_actual">
+        <button type="submit">Run Comparison Query</button>
+    </form>
+    <div id="compare_forecast_actual_result"></div>
+    
+    <br>
+    <a href="../complex.html">Back to Complex Queries</a>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Shipping Marks</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <h2>Update Shipping Marks</h2>
+    <form action="../../PHP_Files/shippingmarks/update.php" method="post">
+        <label for="shipping_id">Shipping ID to Update:</label><br>
+        <input type="number" id="shipping_id" name="shipping_id" required><br><br>
+
+        <label for="shipping_marks">New Shipping Marks:</label><br>
+        <textarea id="shipping_marks" name="shipping_marks" rows="4" required></textarea><br><br>
+
+        <input type="submit" value="Update Shipping Marks">
+    </form>
+    <br>
+    <a href="../index.html">Back to Dashboard</a>
+</body>
+</html>

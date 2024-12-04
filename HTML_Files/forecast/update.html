@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Forecast</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <h2>Update Forecast</h2>
+    <form action="../../PHP_Files/forecast/update.php" method="post">
+        <label for="forecast_id">Forecast ID to Update:</label><br>
+        <input type="number" id="forecast_id" name="forecast_id" required><br><br>
+
+        <label for="period">New Period:</label><br>
+        <input type="text" id="period" name="period"><br><br>
+
+        <label for="predicted_demand">New Predicted Demand:</label><br>
+        <input type="number" id="predicted_demand" name="predicted_demand"><br><br>
+
+        <input type="submit" value="Update Forecast">
+    </form>
+    <br>
+    <a href="../index.html">Back to Dashboard</a>
+</body>
+</html>

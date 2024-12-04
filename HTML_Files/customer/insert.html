@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insert Customer</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <h2>Insert New Customer</h2>
+    <form action="../../PHP_Files/customer/insert.php" method="post">
+        <label for="customer_id">Customer ID:</label><br>
+        <input type="number" id="customer_id" name="customer_id" required><br><br>
+
+        <label for="customer_name">Customer Name:</label><br>
+        <input type="text" id="customer_name" name="customer_name" required><br><br>
+
+        <label for="customer_address">Customer Address:</label><br>
+        <input type="text" id="customer_address" name="customer_address" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="phone">Phone:</label><br>
+        <input type="text" id="phone" name="phone"><br><br>
+
+        <input type="submit" value="Insert Customer">
+    </form>
+    <br>
+    <a href="../index.html">Back to Dashboard</a>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insert Shipment</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <h2>Insert New Shipment</h2>
+    <form action="../../PHP_Files/shipment/insert.php" method="post">
+        <label for="shipment_id">Shipment ID:</label><br>
+        <input type="number" id="shipment_id" name="shipment_id" required><br><br>
+
+        <label for="shipment_date">Shipment Date:</label><br>
+        <input type="date" id="shipment_date" name="shipment_date"><br><br>
+
+        <label for="tracking_status">Tracking Status:</label><br>
+        <input type="text" id="tracking_status" name="tracking_status"><br><br>
+
+        <label for="retailer_id">Retailer ID:</label><br>
+        <input type="number" id="retailer_id" name="retailer_id" required><br><br>
+
+        <label for="warehouse_id">Warehouse ID:</label><br>
+        <input type="number" id="warehouse_id" name="warehouse_id" required><br><br>
+
+        <label for="delivery_to_retailer_status">Delivery to Retailer Status:</label><br>
+        <input type="text" id="delivery_to_retailer_status" name="delivery_to_retailer_status"><br><br>
+
+        <label for="delivery_to_customer_status">Delivery to Customer Status:</label><br>
+        <input type="text" id="delivery_to_customer_status" name="delivery_to_customer_status"><br><br>
+
+        <input type="submit" value="Insert Shipment">
+    </form>
+    <br>
+    <a href="../index.html">Back to Dashboard</a>
+</body>
+</html>

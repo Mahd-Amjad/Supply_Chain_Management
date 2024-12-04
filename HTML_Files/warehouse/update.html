@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Warehouse</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <h2>Update Warehouse</h2>
+    <form action="../../PHP_Files/warehouse/update.php" method="post">
+        <label for="warehouse_id">Warehouse ID to Update:</label><br>
+        <input type="number" id="warehouse_id" name="warehouse_id" required><br><br>
+
+        <label for="warehouse_location">New Location:</label><br>
+        <input type="text" id="warehouse_location" name="warehouse_location"><br><br>
+
+        <label for="capacity">New Capacity (cubic meters):</label><br>
+        <input type="number" id="capacity" name="capacity" min="1"><br><br>
+
+        <input type="submit" value="Update Warehouse">
+    </form>
+    <br>
+    <a href="../index.html">Back to Dashboard</a>
+</body>
+</html>

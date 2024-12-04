@@ -1,0 +1,32 @@
+<!-- HTML_Files/complex/data_integrity.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Integrity and Cleanup</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <h2>Data Integrity and Cleanup</h2>
+    <ul>
+        <li><a href="data_integrity.html#remove_inactive_customers">Remove Inactive Customers</a></li>
+        <li><a href="data_integrity.html#nullify_outdated_inventory">Nullify Outdated Inventory Records</a></li>
+    </ul>
+    
+    <h3 id="remove_inactive_customers">Remove Inactive Customers with No Orders</h3>
+    <form action="../../PHP_Files/complex/data_integrity.php" method="post">
+        <input type="hidden" name="query_type" value="remove_inactive_customers">
+        <button type="submit" onclick="return confirm('Are you sure you want to remove inactive customers?')">Remove Inactive Customers</button>
+    </form>
+    <div id="remove_inactive_customers_result"></div>
+    
+    <h3 id="nullify_outdated_inventory">Nullify Outdated Inventory Records</h3>
+    <form action="../../PHP_Files/complex/data_integrity.php" method="post">
+        <input type="hidden" name="query_type" value="nullify_outdated_inventory">
+        <button type="submit">Nullify Outdated Inventory</button>
+    </form>
+    <div id="nullify_outdated_inventory_result"></div>
+    
+    <br>
+    <a href="../complex.html">Back to Complex Queries</a>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insert Forecast</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <h2>Insert Forecast</h2>
+    <form action="../../PHP_Files/forecast/insert.php" method="post">
+        <label for="forecast_id">Forecast ID:</label><br>
+        <input type="number" id="forecast_id" name="forecast_id" required><br><br>
+
+        <label for="product_id">Product ID:</label><br>
+        <input type="number" id="product_id" name="product_id" required><br><br>
+
+        <label for="period">Period:</label><br>
+        <input type="text" id="period" name="period" required><br><br>
+
+        <label for="predicted_demand">Predicted Demand:</label><br>
+        <input type="number" id="predicted_demand" name="predicted_demand" required><br><br>
+
+        <input type="submit" value="Insert Forecast">
+    </form>
+    <br>
+    <a href="../index.html">Back to Dashboard</a>
+</body>
+</html>

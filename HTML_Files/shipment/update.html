@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Shipment</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <h2>Update Shipment</h2>
+    <form action="../../PHP_Files/shipment/update.php" method="post">
+        <label for="shipment_id">Shipment ID to Update:</label><br>
+        <input type="number" id="shipment_id" name="shipment_id" required><br><br>
+
+        <label for="shipment_date">New Shipment Date:</label><br>
+        <input type="date" id="shipment_date" name="shipment_date"><br><br>
+
+        <label for="tracking_status">New Tracking Status:</label><br>
+        <input type="text" id="tracking_status" name="tracking_status"><br><br>
+
+        <label for="retailer_id">New Retailer ID:</label><br>
+        <input type="number" id="retailer_id" name="retailer_id"><br><br>
+
+        <label for="warehouse_id">New Warehouse ID:</label><br>
+        <input type="number" id="warehouse_id" name="warehouse_id"><br><br>
+
+        <label for="delivery_to_retailer_status">New Delivery to Retailer Status:</label><br>
+        <input type="text" id="delivery_to_retailer_status" name="delivery_to_retailer_status"><br><br>
+
+        <label for="delivery_to_customer_status">New Delivery to Customer Status:</label><br>
+        <input type="text" id="delivery_to_customer_status" name="delivery_to_customer_status"><br><br>
+
+        <input type="submit" value="Update Shipment">
+    </form>
+    <br>
+    <a href="../index.html">Back to Dashboard</a>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!-- HTML_Files/complex/customer_supplier_insights.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer and Supplier Insights</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <h2>Customer and Supplier Insights</h2>
+    <ul>
+        <li><a href="customer_supplier_insights.html#total_quantity_per_customer">Total Quantity Ordered by Each Customer</a></li>
+        <li><a href="customer_supplier_insights.html#supplier_order_summary">Supplier Order Summary</a></li>
+        <li><a href="customer_supplier_insights.html#top_customers_by_status">Top Customers by Order Status</a></li>
+    </ul>
+    
+    <h3 id="total_quantity_per_customer">Total Quantity Ordered by Each Customer</h3>
+    <form action="../../PHP_Files/complex/customer_supplier_insights.php" method="post">
+        <input type="hidden" name="query_type" value="total_quantity_per_customer">
+        <button type="submit">Run Total Quantity Query</button>
+    </form>
+    <div id="total_quantity_per_customer_result"></div>
+    
+    <h3 id="supplier_order_summary">Supplier Order Summary</h3>
+    <form action="../../PHP_Files/complex/customer_supplier_insights.php" method="post">
+        <input type="hidden" name="query_type" value="supplier_order_summary">
+        <button type="submit">Run Supplier Summary Query</button>
+    </form>
+    <div id="supplier_order_summary_result"></div>
+    
+    <h3 id="top_customers_by_status">Top Customers Based on Order Status</h3>
+    <form action="../../PHP_Files/complex/customer_supplier_insights.php" method="post">
+        <input type="hidden" name="query_type" value="top_customers_by_status">
+        <button type="submit">Run Top Customers by Status Query</button>
+    </form>
+    <div id="top_customers_by_status_result"></div>
+    
+    <br>
+    <a href="../complex.html">Back to Complex Queries</a>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insert Forwarder</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <h2>Insert Forwarder</h2>
+    <form action="../../PHP_Files/forwarder/insert.php" method="post">
+        <label for="forwarder_id">Forwarder ID:</label><br>
+        <input type="number" id="forwarder_id" name="forwarder_id" required><br><br>
+
+        <label for="name">Forwarder Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="warehouse_location">Warehouse Location:</label><br>
+        <input type="text" id="warehouse_location" name="warehouse_location" required><br><br>
+
+        <input type="submit" value="Insert Forwarder">
+    </form>
+    <br>
+    <a href="../index.html">Back to Dashboard</a>
+</body>
+</html>

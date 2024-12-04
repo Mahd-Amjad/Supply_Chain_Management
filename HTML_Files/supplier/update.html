@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Supplier</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <h2>Update Supplier</h2>
+    <form action="../../PHP_Files/supplier/update.php" method="post">
+        <label for="supplier_id">Supplier ID to Update:</label><br>
+        <input type="number" id="supplier_id" name="supplier_id" required><br><br>
+
+        <label for="supplier_name">New Supplier Name:</label><br>
+        <input type="text" id="supplier_name" name="supplier_name"><br><br>
+
+        <label for="contact_info">New Contact Info:</label><br>
+        <input type="text" id="contact_info" name="contact_info"><br><br>
+
+        <label for="country">New Country:</label><br>
+        <input type="text" id="country" name="country"><br><br>
+
+        <label for="rating">New Rating:</label><br>
+        <input type="number" id="rating" name="rating" step="0.1" min="0" max="5"><br><br>
+
+        <input type="submit" value="Update Supplier">
+    </form>
+    <br>
+    <a href="../index.html">Back to Dashboard</a>
+</body>
+</html>

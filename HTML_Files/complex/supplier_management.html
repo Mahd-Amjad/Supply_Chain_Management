@@ -1,0 +1,32 @@
+<!-- HTML_Files/complex/supplier_management.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Supplier Management</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <h2>Supplier Management</h2>
+    <ul>
+        <li><a href="supplier_management.html#performance_report">Supplier Performance Report</a></li>
+        <li><a href="supplier_management.html#inactive_suppliers">Identify Inactive Suppliers</a></li>
+    </ul>
+    
+    <h3 id="performance_report">Supplier Performance Report Including Average Delivery Time</h3>
+    <form action="../../PHP_Files/complex/supplier_management.php" method="post">
+        <input type="hidden" name="query_type" value="performance_report">
+        <button type="submit">Run Performance Report</button>
+    </form>
+    <div id="performance_report_result"></div>
+    
+    <h3 id="inactive_suppliers">Identify Inactive Suppliers with No Orders in the Past Year</h3>
+    <form action="../../PHP_Files/complex/supplier_management.php" method="post">
+        <input type="hidden" name="query_type" value="inactive_suppliers">
+        <button type="submit">Find Inactive Suppliers</button>
+    </form>
+    <div id="inactive_suppliers_result"></div>
+    
+    <br>
+    <a href="../complex.html">Back to Complex Queries</a>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Retailer</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <h2>Update Retailer</h2>
+    <form action="../../PHP_Files/retailer/update.php" method="post">
+        <label for="retailer_id">Retailer ID to Update:</label><br>
+        <input type="number" id="retailer_id" name="retailer_id" required><br><br>
+
+        <label for="retailer_name">New Retailer Name:</label><br>
+        <input type="text" id="retailer_name" name="retailer_name"><br><br>
+
+        <label for="retailer_location">New Retailer Location:</label><br>
+        <input type="text" id="retailer_location" name="retailer_location"><br><br>
+
+        <label for="warehouse_capacity">New Warehouse Capacity:</label><br>
+        <input type="number" id="warehouse_capacity" name="warehouse_capacity" min="0"><br><br>
+
+        <input type="submit" value="Update Retailer">
+    </form>
+    <br>
+    <a href="../index.html">Back to Dashboard</a>
+</body>
+</html>
